@@ -1,0 +1,14 @@
+.projects {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.projects__project-card:not(:nth-child(3n)) {
+  margin-right: 30px;
+}
+
+.projects__project-card:not(:nth-child(-n + 3)) {
+  margin-top: 30px;
+}

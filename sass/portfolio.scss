@@ -1,0 +1,19 @@
+@import "./utils/variables";
+@import "./base/box-sizing";
+@import "./blocks/header/header";
+@import "./blocks/header/logo";
+@import "./blocks/header/navigation";
+@import "./blocks/header/contacts";
+
+@import "./blocks/portfolio/our-projects";
+@import "./blocks/portfolio/radio-buttons";
+@import "./blocks/portfolio/projects";
+@import "./blocks/portfolio/project-card";
+
+@import "./blocks/main/button";
+@import "./blocks/main/social-list";
+@import "./blocks/footer/footer";
+@import "./blocks/footer/address";
+@import "./blocks/footer/join";
+@import "./blocks/footer/sign";
+@import "./blocks/footer/sign-form";

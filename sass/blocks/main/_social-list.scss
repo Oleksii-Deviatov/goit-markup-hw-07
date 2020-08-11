@@ -1,0 +1,30 @@
+.social-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  justify-content: center;
+}
+
+.social-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  fill: #afb1b8;
+  border-radius: 50%;
+
+  transition: all 250ms $cubic;
+}
+.social-list__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-list__link:hover,
+.social-list__link:focus {
+  background-color: $accent-color;
+  border-radius: 50%;
+  fill: #ffffff;
+}
