@@ -17,14 +17,14 @@
   border-radius: 50%;
 
   transition: all 250ms $cubic;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    border-radius: 50%;
+    fill: #ffffff;
+  }
 }
 .social-list__item:not(:last-child) {
   margin-right: 10px;
-}
-
-.social-list__link:hover,
-.social-list__link:focus {
-  background-color: $accent-color;
-  border-radius: 50%;
-  fill: #ffffff;
 }

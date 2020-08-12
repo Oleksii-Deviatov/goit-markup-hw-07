@@ -64,15 +64,15 @@
   cursor: pointer;
   outline: none;
   transition: all 250ms $cubic;
-}
 
-.backdrop-form__input:focus ~ .backdrop-form__icon {
-  fill: $accent-color;
-}
+  &:focus {
+    border: 1px solid $accent-color;
+    fill: $accent-color;
+  }
 
-.backdrop-form__input:focus {
-  border: 1px solid $accent-color;
-  fill: $accent-color;
+  &:focus ~ .backdrop-form__icon {
+    fill: $accent-color;
+  }
 }
 
 .backdrop-form__icon {
@@ -116,20 +116,20 @@
   border-radius: 4px;
   outline: none;
   transition: all 250ms $cubic;
-}
 
-.backdrop-form__textarea::placeholder {
-  font-family: $main-font;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.14;
-  letter-spacing: 0.01em;
+  &:focus {
+    border: 1px solid $accent-color;
+  }
 
-  color: rgba(117, 117, 117, 0.5);
-}
+  &::placeholder {
+    font-family: $main-font;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
 
-.backdrop-form__textarea:focus {
-  border: 1px solid $accent-color;
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
 .backdrop-form__checkbox-label {
@@ -149,6 +149,16 @@
   padding: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
+
+  &:checked ~ .backdrop-form__icon-checkbox-wrapper {
+    border: 2px solid transparent;
+    border-radius: 2px;
+    background-color: $accent-color;
+  }
+
+  &:checked + * .backdrop-form__icon-checkbox {
+    fill: #ffffff;
+  }
 }
 
 .backdrop-form__icon-checkbox-wrapper {
@@ -188,16 +198,6 @@
   transition: all 250ms $cubic;
 }
 
-.backdrop-form__checkbox:checked ~ .backdrop-form__icon-checkbox-wrapper {
-  border: 2px solid transparent;
-  border-radius: 2px;
-  background-color: $accent-color;
-}
-
-.backdrop-form__checkbox:checked + * .backdrop-form__icon-checkbox {
-  fill: #ffffff;
-}
-
 .backdrop-form__button-close {
   display: flex;
   justify-content: center;
@@ -212,8 +212,8 @@
   border-radius: 50%;
   fill: #000000;
   cursor: pointer;
-}
 
-.backdrop-form__button-close:hover {
-  fill: $accent-color;
+  &:hover {
+    fill: $accent-color;
+  }
 }

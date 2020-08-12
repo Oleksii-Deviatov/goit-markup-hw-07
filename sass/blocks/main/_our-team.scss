@@ -4,13 +4,7 @@
   background-color: $secondary-white-color;
 }
 .our-team__container {
-  margin-left: auto;
-  margin-right: auto;
-
-  padding-left: 15px;
-  padding-right: 15px;
-
-  width: 1200px;
+  @extend %container;
 }
 
 .our-team__title {

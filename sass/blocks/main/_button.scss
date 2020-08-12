@@ -15,9 +15,9 @@
   letter-spacing: 0.06em;
   cursor: pointer;
   transition: all 250ms $cubic;
-}
 
-.button:hover,
-.button:focus {
-  background: #188ce8;
+  &:hover,
+  &:focus {
+    background: #188ce8;
+  }
 }

@@ -4,13 +4,7 @@
 }
 
 .clients__container {
-  margin-left: auto;
-  margin-right: auto;
-
-  padding-left: 15px;
-  padding-right: 15px;
-
-  width: 1200px;
+  @extend %container;
 }
 
 .clients__title {
@@ -52,10 +46,10 @@
   fill: #afb1b8;
 
   transition: all 250ms $cubic;
-}
 
-.clients__link:hover,
-.clients__link:focus {
-  fill: $accent-color;
-  border-color: $accent-color;
+  &:hover,
+  &:focus {
+    fill: $accent-color;
+    border-color: $accent-color;
+  }
 }
