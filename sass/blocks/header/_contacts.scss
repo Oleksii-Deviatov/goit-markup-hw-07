@@ -11,7 +11,7 @@
 .contacts__link {
   display: flex;
   align-items: center;
-  text-decoration: none;
+  @extend %link;
 
   font-family: $main-font;
   font-style: normal;
@@ -23,12 +23,12 @@
   fill: currentColor;
 
   transition: color 250ms $cubic;
-}
 
-.contacts__link:hover,
-.contacts__link:focus {
-  color: $accent-color;
-  fill: $accent-color;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+    fill: $accent-color;
+  }
 }
 
 .contacts__item:not(:last-child) {

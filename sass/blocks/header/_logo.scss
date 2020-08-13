@@ -7,5 +7,13 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
 
-  text-decoration: none;
+  @extend %link;
+}
+
+.logo__studio--black {
+  color: #000000;
+}
+
+.logo__studio--white {
+  color: #ffffff;
 }

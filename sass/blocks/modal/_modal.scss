@@ -69,10 +69,6 @@
     border: 1px solid $accent-color;
     fill: $accent-color;
   }
-
-  &:focus ~ .backdrop-form__icon {
-    fill: $accent-color;
-  }
 }
 
 .backdrop-form__icon {
@@ -81,6 +77,10 @@
   left: 12px;
   transform: translateY(-50%);
   transition: all 250ms $cubic;
+
+  .backdrop-form__input:focus ~ & {
+    fill: $accent-color;
+  }
 }
 
 .backdrop-form__label-text {
@@ -132,33 +132,16 @@
   }
 }
 
+.backdrop-form__checkbox {
+  @extend %visually-hidden;
+}
+
 .backdrop-form__checkbox-label {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
   cursor: pointer;
-}
-
-.backdrop-form__checkbox {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
-
-  &:checked ~ .backdrop-form__icon-checkbox-wrapper {
-    border: 2px solid transparent;
-    border-radius: 2px;
-    background-color: $accent-color;
-  }
-
-  &:checked + * .backdrop-form__icon-checkbox {
-    fill: #ffffff;
-  }
 }
 
 .backdrop-form__icon-checkbox-wrapper {
@@ -172,6 +155,12 @@
   border: 2px solid $primary-title-color;
   border-radius: 2px;
   transition: all 250ms $cubic;
+
+  .backdrop-form__checkbox:checked ~ & {
+    border: 2px solid transparent;
+    border-radius: 2px;
+    background-color: $accent-color;
+  }
 }
 
 .backdrop-form__check-text {
@@ -186,16 +175,20 @@
 }
 
 .backdrop-form__check-link {
+  @extend %link;
   display: inline-block;
   line-height: 0.9em;
   color: $accent-color;
-  text-decoration: none;
   border-bottom: 1px solid $accent-color;
 }
 
 .backdrop-form__icon-checkbox {
   fill: transparent;
   transition: all 250ms $cubic;
+
+  .backdrop-form__checkbox:checked + * & {
+    fill: #ffffff;
+  }
 }
 
 .backdrop-form__button-close {
