@@ -1,23 +1,16 @@
 .project-card {
   width: calc((100% - 60px) / 3);
   list-style: none;
+  &:hover,
+  &:focus-within {
+    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      0px 1px 1px rgba(0, 0, 0, 0.12);
+  }
 }
 
 .project-card__link {
   @extend %link;
-
   outline: none;
-
-  transition: all 250ms $cubic;
-  &:hover,
-  &:focus {
-    box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      0px 1px 1px rgba(0, 0, 0, 0.12), 1px 4px 6px rgb(236, 28, 28);
-  }
-}
-
-.project-card:hover,
-.project-card:focus {
 }
 
 .project-card__thumb {
@@ -46,11 +39,11 @@
   background: rgba(33, 150, 243, 0.9);
 
   transition: transform 250ms $cubic;
-}
 
-.project-card__link:hover .project-card__description,
-.project-card__link:focus .project-card__description {
-  transform: translateY(-100%);
+  .project-card__link:hover &,
+  .project-card__link:focus & {
+    transform: translateY(-100%);
+  }
 }
 
 .project-card__content {
