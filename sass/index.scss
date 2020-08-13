@@ -1,28 +1,28 @@
 @import "./utils/variables";
 @import "./base/box-sizing";
 @import "./utils/placeholders";
-@import "./blocks/header/header";
-@import "./blocks/header/logo";
-@import "./blocks/header/navigation";
-@import "./blocks/header/contacts";
+@import "./components/header/header";
+@import "./components/header/logo";
+@import "./components/header/navigation";
+@import "./components/header/contacts";
 
-@import "./blocks/main/hero";
-@import "./blocks/main/button";
+@import "./components/main/hero";
+@import "./components/main/button";
 
-@import "./blocks/main/advantages";
+@import "./components/main/advantages";
 
-@import "./blocks/main/what-we-do";
+@import "./components/main/what-we-do";
 
-@import "./blocks/main/our-team";
-@import "./blocks/main/teammate-card";
-@import "./blocks/main/social-list";
+@import "./components/main/our-team";
+@import "./components/main/teammate-card";
+@import "./components/main/social-list";
 
-@import "./blocks/main/clients";
+@import "./components/main/clients";
 
-@import "./blocks/footer/footer";
-@import "./blocks/footer/address";
-@import "./blocks/footer/join";
-@import "./blocks/footer/sign";
-@import "./blocks/footer/sign-form";
+@import "./components/footer/footer";
+@import "./components/footer/address";
+@import "./components/footer/join";
+@import "./components/footer/sign";
+@import "./components/footer/sign-form";
 
-@import "./blocks/modal/modal";
+@import "./components/modal/modal";

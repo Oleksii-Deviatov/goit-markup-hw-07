@@ -11,10 +11,8 @@
 }
 
 .advantages__list {
-  margin: 0;
-  padding: 0;
+  @extend %list;
   display: flex;
-  list-style: none;
 }
 
 .advantages__wrapper {

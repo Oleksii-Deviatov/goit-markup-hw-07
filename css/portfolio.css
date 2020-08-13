@@ -31,6 +31,12 @@ html {
   text-decoration: none;
 }
 
+.navigation__list, .contacts__list, .projects, .social-list, .address__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .header {
   outline: 1px solid #ececec;
 }
@@ -70,9 +76,6 @@ html {
 
 .navigation__list {
   display: flex;
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
 .navigation__link {
@@ -114,10 +117,6 @@ html {
 
 .contacts__list {
   display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
 .contacts__link {
@@ -194,8 +193,6 @@ html {
 }
 
 .projects {
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-wrap: wrap;
 }
@@ -301,9 +298,6 @@ html {
 }
 
 .social-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
   display: flex;
   justify-content: center;
 }
@@ -364,12 +358,6 @@ html {
 
 .footer__sign {
   margin-left: auto;
-}
-
-.address__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
 .address__location {

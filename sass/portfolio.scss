@@ -1,20 +1,20 @@
 @import "./utils/variables";
 @import "./base/box-sizing";
 @import "./utils/placeholders";
-@import "./blocks/header/header";
-@import "./blocks/header/logo";
-@import "./blocks/header/navigation";
-@import "./blocks/header/contacts";
+@import "./components/header/header";
+@import "./components/header/logo";
+@import "./components/header/navigation";
+@import "./components/header/contacts";
 
-@import "./blocks/portfolio/our-projects";
-@import "./blocks/portfolio/radio-buttons";
-@import "./blocks/portfolio/projects";
-@import "./blocks/portfolio/project-card";
+@import "./components/portfolio/our-projects";
+@import "./components/portfolio/radio-buttons";
+@import "./components/portfolio/projects";
+@import "./components/portfolio/project-card";
 
-@import "./blocks/main/button";
-@import "./blocks/main/social-list";
-@import "./blocks/footer/footer";
-@import "./blocks/footer/address";
-@import "./blocks/footer/join";
-@import "./blocks/footer/sign";
-@import "./blocks/footer/sign-form";
+@import "./components/main/button";
+@import "./components/main/social-list";
+@import "./components/footer/footer";
+@import "./components/footer/address";
+@import "./components/footer/join";
+@import "./components/footer/sign";
+@import "./components/footer/sign-form";

@@ -8,6 +8,7 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+// @extend %visually-hidden;
 
 %container {
   margin-left: auto;
@@ -18,7 +19,16 @@
 
   width: 1200px;
 }
+// @extend %container;
 
 %link {
   text-decoration: none;
 }
+// @extend %link;
+
+%list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+// @extend %list;

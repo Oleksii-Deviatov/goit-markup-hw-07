@@ -22,11 +22,9 @@
 }
 
 .clients__list {
-  margin: 0;
-  padding: 0;
+  @extend %list;
   display: flex;
   justify-content: center;
-  list-style: none;
 }
 
 .clients__item:not(:last-child) {

@@ -31,6 +31,12 @@ html {
   text-decoration: none;
 }
 
+.navigation__list, .contacts__list, .advantages__list, .what-we-do__list, .social-list, .clients__list, .address__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .header {
   outline: 1px solid #ececec;
 }
@@ -70,9 +76,6 @@ html {
 
 .navigation__list {
   display: flex;
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
 .navigation__link {
@@ -114,10 +117,6 @@ html {
 
 .contacts__list {
   display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
 .contacts__link {
@@ -202,10 +201,7 @@ html {
 }
 
 .advantages__list {
-  margin: 0;
-  padding: 0;
   display: flex;
-  list-style: none;
 }
 
 .advantages__wrapper {
@@ -269,10 +265,7 @@ html {
 }
 
 .what-we-do__list {
-  margin: 0;
-  padding: 0;
   display: flex;
-  list-style: none;
 }
 
 .what-we-do__card:not(:last-child) {
@@ -371,9 +364,6 @@ html {
 }
 
 .social-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
   display: flex;
   justify-content: center;
 }
@@ -417,11 +407,8 @@ html {
 }
 
 .clients__list {
-  margin: 0;
-  padding: 0;
   display: flex;
   justify-content: center;
-  list-style: none;
 }
 
 .clients__item:not(:last-child) {
@@ -480,12 +467,6 @@ html {
 
 .footer__sign {
   margin-left: auto;
-}
-
-.address__list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
 .address__location {

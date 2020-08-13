@@ -1,6 +1,5 @@
 .projects {
-  margin: 0;
-  padding: 0;
+  @extend %list;
   display: flex;
   flex-wrap: wrap;
 }
